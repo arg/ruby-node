@@ -21,4 +21,5 @@ RUN apt-get install -y -qqy git-core curl nodejs phantomjs
 
 RUN curl -sSL https://get.rvm.io | bash -s stable --ruby
 RUN echo "source /usr/local/rvm/scripts/rvm" >> /etc/bash.bashrc
+RUN source /usr/local/rvm/scripts/rvm
 ADD gemrc /etc/gemrc
